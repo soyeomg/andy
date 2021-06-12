@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang= "ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Andy Warhol</title>
+        <style>
+             body{
+                width: 1920px;
+                background-color: #d7518c;
+                margin: 0;
+                 font-family: "FS Lucas Pro", "Noto Sans KR", sans-serif;
+            }
+            
+            header{
+                width: 100%;
+                height: 50px;
+                background-color: white;
+                position: fixed;
+
+                top: 0;
+                left: 0;
+                z-index: 9999;
+            }
+            
+            .wrapper{
+                width: 1600px;
+                margin: 0 auto;
+                background-color: white;
+                font-family: "FS Lucas Pro", sans-serif;
+            }
+          
+            .wrapper img{
+                width: 240px;
+                margin: 12px;
+                float: left;
+                
+            }
+            .menu{
+                float: right;
+                font-size: 16pt;
+                margin: 0;
+                letter-spacing:6pt;
+            }
+            .menu li{
+                float: left;
+                margin: 16px;
+                padding-left: 100px;
+            }
+            ul{
+                list-style-type: none;
+            }
+            .item a{
+                text-decoration: none;
+                color: #A4A4A4;
+            }
+
+            .item a:hover{
+                color: #d7518c;
+            }
+
+            .content{
+                width: 1200px;
+                margin: 0 auto;
+                font-family: "FS Lucas Pro", "Noto Sans KR", sans-serif;
+            }
+            
+            .content h1{
+                font-size: 48pt;
+                
+            }
+            .content h2{
+                font-size: 40pt;
+                text-align: center;
+                line-height: 12pt;
+            }
+            .content h3{
+                font-size: 28pt;
+                line-height: 8pt;
+            }
+            .content p{
+                text-align: justify;
+                font-size: 12pt;
+                line-height: 24pt;
+                color: white;
+            }
+            
+            .title_img{
+                width: 1920px;
+                margin: 0 auto;
+                
+            }
+            .title{
+                position: relative;
+            }
+            .intro p{
+                padding-top: 20px;
+                font-size: 12pt;
+                line-height: 24pt;
+                color: white;
+                text-align: center;
+                width: 1200px;
+                margin: 0 auto;
+            }
+            .intro{
+                margin-bottom: 200px;
+                position: absolute;
+                top: 80%;
+                left: 19%;
+                
+            }
+            
+            .intro h2{
+                font-size: 40pt;
+                text-align: center;
+                line-height: 12pt;
+                color: white;
+                padding-bottom: 40px;
+            }
+            
+            .section h3{
+                color: #e4c700;
+            }
+            
+            .section hr{
+                opacity: 0.3;
+            }
+            .sec1{
+                margin-top: 240px;
+                margin-bottom: 100px;
+            }
+            .sec2{
+                margin-top: 100px;
+                text-align: right;
+                margin-bottom: 100px;
+            }
+            .sec2 p{
+                text-align: right;
+            }
+            .sec3{
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+            .sec4{
+                margin-top: 100px;
+                text-align: right;
+                margin-bottom: 100px;
+            }
+            .sec4 p{
+                text-align: right;
+            }
+            .sec5{
+                margin-top: 100px;
+                margin-bottom: 100px;
+            }
+            .sec6{
+                margin-top: 100px;
+                text-align: right;
+                margin-bottom: 200px;
+            }
+            .sec6 p{
+                text-align: right;
+                
+            }
+            .sec1 h1{
+                float: left;
+            }
+            
+            .fir_left{
+                margin-left: 400px;
+                width: 800px;
+                float: none;
+            }
+            .sec2 h1{
+                float: right;
+            }
+            .sec_right{
+                margin-right: 400px;
+                width: 800px;
+                float: none;
+                
+            }
+            .sec3 h1{
+                float: left;
+            }
+            .thi_left{
+                margin-left: 400px;
+                width: 800px;
+                float: none;
+            }
+            .sec4 h1{
+                float: right;
+            }
+            .fou_right{
+                margin-right: 400px;
+                width: 800px;
+                float: none;
+                
+            }
+            .sec5 h1{
+                float: left;
+            }
+            .fiv_left{
+                margin-left: 400px;
+                width: 800px;
+                float: none;
+            }
+            .sec6 h1{
+                float: right;
+            }
+            .six_right{
+                margin-right: 400px;
+                width: 800px;
+                float: none;
+                
+            }
+            
+            .special{
+                float: none;
+                margin-bottom: 160px;
+            }
+            .special h1{
+                text-align: center;
+                padding-bottom: 40px;
+            }
+            .special h3{
+                color: #e4c700;
+            }
+            .special hr{
+                opacity: 0.3;
+            }
+            .special_con{
+                margin-top: 60px;
+                margin-bottom: 60px;
+            }
+            .footwrap{
+                width: 100%;
+                height: 250px;
+                background-color:#111111;
+                font-family: "FS Lucas Pro", sans-serif;
+                
+            }
+            .footcon{
+                width: 1600px;
+                margin: 0 auto;
+            }
+
+            .footwrap img{
+                width:24px;
+                margin: 12px;
+            }
+            .footwrap a{
+                text-decoration:none;
+            }
+            
+            .icon{
+                padding-top: 100px;
+                float: left;
+            }
+            .icon img{
+                margin-right: 40px;
+                width: 28px;
+            }
+            .footlogo{
+                color: #A7A7A7;
+                float: right;
+                text-align: right;
+                line-height: 12px;
+                font-size: 16pt;
+                margin-top: 70px;
+            }
+            .footcall{
+                color: #A7A7A7;
+                float: right;
+                text-align: right;
+                margin-right: 200px;
+                margin-top: 50px;
+            }
+            .footcall p{
+                font-size: 9pt;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper">
+                <a href="andy_2.html">
+                    <img src="../source/logo2.png">
+                </a>
+                
+                 <nav>
+                     <ul class="menu">
+                         <li class="item"><a href="andy_3.html">About</a></li>
+                         <li class="item"><a href="andy_4.html">Works</a></li>
+                         <li class="item"><a href="andy_5.html">Showroom</a></li>
+                         <li class="item"><a href="andy_6.html">Tickets</a></li>
+                     </ul>
+                 </nav>
+             </div>
+ 
+         </header>
+         <div class="title">
+             <img class="title_img" src="../source/img.jpg">
+             
+             <div class="intro">
+               
+                <h2>In fifteen minutes everybody will be famous.</h2>
+                <p>2021년, 대중은 SNS를 통해 다양한 사람들과 일상을 공유할 수 있는 세상 속에서 앤디 워홀의 예언을 실감한다. 살아생전 앤디 워홀이 염원했던 대로 브랜드 이상의 힘을 갖게 된 그의 삶을 들여다보며 관객 또한 자신의 삶을 반추하는 경험을 하게 된다. INTRO에서는 앤디 워홀의 삶의 중요한 키워드가 되는 사건들을 한눈에 살펴볼 수 있다.</p>
+            </div>
+         </div>
+         <div class="content">
+            
+            <div class="section">
+               
+                <div class="sec1">
+                   
+                    <h1>Section 01.</h1>
+                    <div class="fir_left">
+                        <h3>Fame: My love, My idol</h3>
+                        <p>앤디 워홀은 1962년부터 실크스크린 기법을 사용해 캠벨 수프(Cambell's Soup) 시리즈를 만들기 시작했다. 슈퍼마켓 선반 위의 수프 캔을 작품화해 천문학적인 가격으로 만들어버린 것이다. 하지만 앤디 워홀이 한 것이라고는 수프 캔을 작품 소재로 선택한 것뿐이다. 
+                        이는 그가 수년간 작업한 방식으로 달러 지폐, 티켓, 더 간단히는 사이키델릭한 과일과 같은 익숙한 물건을 작품 소재로 삼은 것이다.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="sec2">
+                    <h1>Section 02.</h1>
+                    <div class="sec_right">
+                        <h3>Icon: Now? Now!</h3>
+                        <p>앤디 워홀의 작품으로 가장 유명한 리즈 테일러(Liz Taylor), 마릴린 먼로(Marilyn Monroe) 등 할리우드 스타들 및 유명인사들의 초상이 이번 섹션에서 전시된다.
+                        가장 대중적이면서도 가장 사적일 수 있는 이런 소재들은 앤디 워홀이 명성을 향해 집착했던 이유를 설명해주며, 동시에 그가 추구하는 철학을 가장 잘 보여준다.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="sec3">
+                    <h1>Section 03.</h1>
+                    <div class="thi_left">
+                        <h3>Unknown &amp; Ordinary People: 타인의 초상!</h3>
+                        <p>앤디 워홀은 상류층부터 소외집단까지 다양한 사회 계층을 캔버스에 담아내는 '사회적 아티스트(Society Artist)' 이기도 했다. 
+                        1970년대 미국의 자유로운 분위기에 접어들면서 워홀은 1975년 흑인 및 히스패닉계의 드래그 퀸 몇 명을 모집해 '레이디즈 앤 젠틀맨(Ladies and Gentlemen)' 시리즈를 제작했다.
+                        이 시리즈가 이전의 초상화와 다른 점은 모델들이 이름이 알려지지 않은 무명의 사람들이라는 점이다.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="sec4">
+                    <h1>Section 04.</h1>
+                    <div class="fou_right">
+                        <h3>Passion: Where We Live In</h3>
+                        <p>앤디 워홀은 할리우드 스타를 작품에 이용한 것처럼, 정치인을 소재로 선택하기도 했다. 이는 다시 한번 시대를 앞서는 통찰력을 보여주었다. 동시에 자연과 지구에 대해 관심을 기울이기도 했다.
+                        이번 섹션에서는 정치인의 초상화, 소, 꽃 시리즈 외에도 워홀이 환경과 자연의 힘에 관심을 갖게 된 이탈리아의 베수비오산(Vesusvius)이 포함된다. 또한 전기 의자, 거리의 시위, 폭동 이미지도 포함된다.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="sec5">
+                    <h1>Section 05.</h1>
+                    <div class="fiv_left">
+                        <h3>Music: Portraits of Rock</h3>
+                        <p>이 섹션은 음악과 앤디 워홀의 콜라보를 보여준다. 워홀은 앨범 벨벳 언더그라운드 앤드 니코(The Velvet Underground &amp; Nico)의 프로듀싱을 맡아 바나나 앨범 재킷을 제작해 사람들의 뇌리에 강한 인상을 주었다.
+                        이번 섹션은 워홀의 시대에 살아 숨쉬었던 수많은 뮤지션들의 앨범 재킷, 수집품, 오브제, 초상화 등을 포함한다.</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="sec6">
+                    <h1>Section 06.</h1>
+                    <div class="six_right">
+                        <h3>Gaze: Drawing &amp; Interview</h3>
+                        <p>앤디 워홀은 실크스크린 작업으로 가장 잘 알려져 있지만, 그는 평생 동안 드로잉 작업을 게을리하지 않았다. 드로잉은 오히려 워홀이 추구했던 다매체의 사용 및 다양한 주제관에 대한 면모를 드러내는 매체이기도 하다.
+                        이번 섹션에서는 화려한 색감의 실크 스크린 작품 뒤에 감춰졌던 워홀의 드로잉과 타인에 대한 섬세한 애정을 갖고 교류했던 워홀의 감성적인 잡지 '인터뷰(Interview)' 를 공개한다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="special">
+                    <h1>Special Zone</h1>
+                    <div class="special_con">
+                        <h3>Pop Garden</h3>
+                        <p>앤디 워홀의 작품을 미디어 아트로 만나다</p>
+                    </div>
+                    <hr>
+                    <div class="special_con">
+                        <h3>Silver Factory</h3>
+                        <p>앤디 워홀의 또 다른 세계! "Silver Factory" 2021년 감성으로 재탄생하다</p>
+                    </div>
+                    <hr>
+                    <div class="special_con">
+                        <h3>Andy Warhol's "Pen and Pencil", Polaroid</h3>
+                        <p>앤디 워홀의 일상을 기록하는 펜의 역할을 한 폴라로이드, 그가 애용했던 폴라로이드 제품들을 만나 볼 수 있는 공간</p>
+                    </div>
+            </div>
+        </div>
+        
+       
+        <footer>
+                <div class="footwrap">
+                   <div class="footcon">
+                        <div class="icon">
+                            <a href="https://twitter.com/home">
+                            <img src="../source/twitter.png">
+                            </a>
+                            <a href="https://www.facebook.com/">
+                                <img src="../source/facebook.png">
+                            </a>
+                            <a href="https://www.instagram.com/">
+                                <img src="../source/instagram.png">
+                            </a>
+                            <a href="https://andywarholexhibition.modoo.at/">
+                                <img src="../source/link.png">
+                            </a>
+                        </div>
+                        <div class="footlogo">
+                            <h2>Andy Warhol</h2>
+                            <h2>Beginning Seoul</h2>
+
+                        </div>
+                        <div class="footcall">
+                            <h3>Contact</h3>
+                            <p></p>
+                            <p>02-3277-0610</p>
+                            <p>26, Uisadang-daero, Yeongdeungpo-gu, Seoul, Republic of Korea</p>
+                            <p>andywarholbeginning@seoul.com</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+    </body>
+</html>

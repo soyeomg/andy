@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang= "ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Andy Warhol</title>
+        <style>
+             body{
+                width: 1920px;
+                background-color: #d7518c;
+                margin: 0;
+                font-family: "FS Lucas Pro", "Noto Sans KR", sans-serif;
+            }
+            button{
+                margin: 0 auto;
+                padding: 0;
+                border-style: none;
+                background-color: rgba( 255, 255, 255, 0 );
+                
+            }
+            
+            header{
+                width: 100%;
+                height: 50px;
+                background-color: white;
+                position: fixed;
+
+                top: 0;
+                left: 0;
+                z-index: 9999;
+            }
+            
+            .wrapper{
+                width: 1600px;
+                margin: 0 auto;
+                background-color: white;
+                font-family: "FS Lucas Pro", sans-serif;
+            }
+          
+            .wrapper img{
+                width: 240px;
+                margin: 12px;
+                float: left;
+                
+            }
+            .menu{
+                float: right;
+                font-size: 16pt;
+                margin: 0;
+                letter-spacing:6pt;
+            }
+            .menu li{
+                float: left;
+                margin: 16px;
+                padding-left: 100px;
+            }
+            ul{
+                list-style-type: none;
+            }
+            .item a{
+                text-decoration: none;
+                color: #A4A4A4;
+            }
+
+            .item a:hover{
+                color: #d7518c;
+            }
+
+            
+            .title h1{
+                font-size: 48pt;
+                text-align: center;
+                line-height: 12pt;
+                color: white;
+                padding-bottom: 40px;
+                margin-top: 280px;
+                margin-bottom: 120px;
+            }
+            
+            .works{
+                width: 1200px;
+                margin: 0 auto;
+                position: relative;
+            }
+            
+            .content{
+                margin-bottom: 120px;
+                position: relative;
+            }
+           
+            
+            .pic{
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                margin-left: 48px;
+                margin-right: 48px;
+                margin-bottom: 160px;
+                display: inline-block;
+                position: relative;
+            }
+            .pic p{
+                font-size: 12pt;
+                color: white;
+                width: 200px;
+                margin-top: 12px;
+            }
+            
+            .overlay{
+			position: absolute;
+			transition: all .1s ease;
+			opacity: 0;
+			background: #D0D3D4;
+            }
+            .pic:hover .overlay{
+                opacity: .6;
+            }
+
+            .overlayFade{
+                height: 100%;
+                width:100%;
+                top: 0;
+                left: 0;
+                background: none;
+                opacity: 0;
+            }
+            .pic:hover .overlayFade{
+                opacity: 1;
+            }
+
+            .footwrap{
+                width: 100%;
+                height: 250px;
+                background-color:#111111;
+                font-family: "FS Lucas Pro", sans-serif;
+                
+            }
+            .footcon{
+                width: 1600px;
+                margin: 0 auto;
+            }
+
+            .footwrap img{
+                width:24px;
+                margin: 12px;
+            }
+
+            .footwrap a{
+                text-decoration:none;
+            }
+            
+            .icon{
+                padding-top: 100px;
+                float: left;
+            }
+            
+            .icon img{
+                margin-right: 40px;
+                width: 28px;
+            }
+            .footlogo{
+                color: #A7A7A7;
+                float: right;
+                text-align: right;
+                line-height: 12px;
+                font-size: 16pt;
+                margin-top: 70px;
+            }
+            .footcall{
+                color: #A7A7A7;
+                float: right;
+                text-align: right;
+                margin-right: 200px;
+                margin-top: 50px;
+            }
+            .footcall p{
+                font-size: 9pt;
+            }
+        </style>
+         
+        <script type="text/javascript">
+            function ChnImg1(){
+                document.getElementById("img1").src = "../source/picture/stop.png";
+            }
+            
+            function play1(toggle){
+            var audio = document.getElementById("audio1");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg2(){
+                document.getElementById("img2").src = "../source/picture/stop.png";
+            }
+            function play2(toggle){
+            var audio = document.getElementById("audio2");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg3(){
+                document.getElementById("img3").src = "../source/picture/stop.png";
+            }
+            function play3(toggle){
+            var audio = document.getElementById("audio3");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg4(){
+                document.getElementById("img4").src = "../source/picture/stop.png";
+            }
+            function play4(toggle){
+            var audio = document.getElementById("audio4");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg5(){
+                document.getElementById("img5").src = "../source/picture/stop.png";
+            }
+            function play5(toggle){
+            var audio = document.getElementById("audio5");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg6(){
+                document.getElementById("img6").src = "../source/picture/stop.png";
+            }
+            function play6(toggle){
+            var audio = document.getElementById("audio6");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg7(){
+                document.getElementById("img7").src = "../source/picture/stop.png";
+            }
+            function play7(toggle){
+            var audio = document.getElementById("audio7");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg8(){
+                document.getElementById("img8").src = "../source/picture/stop.png";
+            }
+            function play8(toggle){
+            var audio = document.getElementById("audio8");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg9(){
+                document.getElementById("img9").src = "../source/picture/stop.png";
+            }
+            function play9(toggle){
+            var audio = document.getElementById("audio9");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg10(){
+                document.getElementById("img10").src = "../source/picture/stop.png";
+            }
+            function play10(toggle){
+            var audio = document.getElementById("audio10");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg11(){
+                document.getElementById("img11").src = "../source/picture/stop.png";
+            }
+            function play11(toggle){
+            var audio = document.getElementById("audio11");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg12(){
+                document.getElementById("img12").src = "../source/picture/stop.png";
+            }
+            function play12(toggle){
+            var audio = document.getElementById("audio12");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg13(){
+                document.getElementById("img13").src = "../source/picture/stop.png";
+            }
+            function play13(toggle){
+            var audio = document.getElementById("audio13");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg14(){
+                document.getElementById("img14").src = "../source/picture/stop.png";
+            }
+            function play14(toggle){
+            var audio = document.getElementById("audio14");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg15(){
+                document.getElementById("img15").src = "../source/picture/stop.png";
+                
+            }
+            function play15(toggle){
+            var audio = document.getElementById("audio15");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+            function ChnImg16(){
+                document.getElementById("img16").src = "../source/picture/stop.png";
+            }
+            function play16(toggle){
+            var audio = document.getElementById("audio16");
+                if (toggle.value === 'PLAY') {
+                    audio.play();
+                    toggle.value = 'PAUSE';
+                }
+
+                else {
+                    audio.pause();
+                    toggle.value = 'PLAY';
+                }
+            }
+            
+        </script>
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper">
+                <a href="andy_2.html">
+                    <img src="../source/logo2.png">
+                </a>
+                
+                 <nav>
+                     <ul class="menu">
+                         <li class="item"><a href="andy_3.html">About</a></li>
+                         <li class="item"><a href="andy_4.html">Works</a></li>
+                         <li class="item"><a href="andy_5.html">Showroom</a></li>
+                         <li class="item"><a href="andy_6.html">Tickets</a></li>
+                     </ul>
+                 </nav>
+             </div>
+ 
+         </header>
+
+        <div class="title">
+            <h1>WORKS</h1>
+        </div>
+        
+        <div class="works">
+           <div class="content">
+               
+                <div class="pic" id="pic1" onclick="play1(this)" value="PLAY">
+                    <button type="button" onclick="play1(this)" value="PLAY">
+                        <img src="../source/picture/pic-01.png" > 
+                        <p align="center">마릴린 (1985)</p>
+                    </button>
+                    
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img1" onclick="ChnImg1()">
+                    </div>
+                    <audio id="audio1" src="../source/audio/1.mp3"></audio>
+                </div>
+               
+               <div class="pic" id="pic2" onclick="play2(this)" value="PLAY">
+                    <button type="button" onclick="play2(this)" value="PLAY">
+                        <img src="../source/picture/pic-02.png" > 
+                        <p align="center">만 레이 (1974)</p>
+                   </button>
+                   
+                   <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img2" onclick="ChnImg2()">			
+                    </div>
+                     <audio id="audio2" src="../source/audio/2.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic3" onclick="play3(this)" value="PLAY">
+                    <button type="button" onclick="play3(this)" value="PLAY">
+                        <img src="../source/picture/pic-03.png" > 
+                        <p align="center">자화상 (1978)</p>
+                    </button>
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img3" onclick="ChnImg3()">			
+                    </div>
+                    <audio id="audio3" src="../source/audio/3.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic4" onclick="play4(this)" value="PLAY">
+                    <button type="button" onclick="play4(this)" value="PLAY">
+                        <img src="../source/picture/pic-04.png" > 
+                        <p align="center">신발 (1955)</p>
+                    </button>
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img4" onclick="ChnImg4()">			
+                    </div>
+                    <audio id="audio4" src="../source/audio/4.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic5" onclick="play5(this)" value="PLAY">
+                    <button type="button" onclick="play5(this)" value="PLAY">
+                        <img src="../source/picture/pic-05.png" > 
+                        <p align="center">브릴로 박스 (1970)</p>
+                    </button>
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img5" onclick="ChnImg5()">			
+                    </div>
+                    <audio id="audio5" src="../source/audio/5.mp3"></audio>
+                </div>
+               
+               <div class="pic" id="pic6" onclick="play6(this)" value="PLAY">
+                    <button type="button" onclick="play6(this)" value="PLAY">
+                        <img src="../source/picture/pic-06.png" > 
+                        <p align="center">캠벨 수프 (1968)</p>
+                   </button>
+                   <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img6" onclick="ChnImg6()">			
+                    </div>
+                    <audio id="audio6" src="../source/audio/6.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic7" onclick="play7(this)" value="PLAY">
+                    <button type="button" onclick="play7(this)" value="PLAY">
+                        <img src="../source/picture/pic-07.png" > 
+                        <p align="center">드래그 퀸 (1975)</p>
+                    </button>
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img7" onclick="ChnImg7()">			
+                    </div>
+                    <audio id="audio7" src="../source/audio/7.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic8" onclick="play8(this)" value="PLAY">
+                    <button type="button" onclick="play8(this)" value="PLAY">
+                        <img src="../source/picture/pic-08.png" > 
+                        <p align="center">레이디스 앤 젠틀맨 (1975)</p>
+                    </button>
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img8" onclick="ChnImg8()">			
+                    </div>
+                    <audio id="audio8" src="../source/audio/8.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic9" onclick="play9(this)" value="PLAY">
+                    <button type="button" onclick="play9(this)" value="PLAY">
+                        <img src="../source/picture/pic-09.png" > 
+                        <p align="center">필로우 실버 클라우드 (1966)</p>
+                    </button>
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img9" onclick="ChnImg9()">			
+                    </div>
+                    <audio id="audio9" src="../source/audio/9.mp3"></audio>
+                </div>
+               
+               <div class="pic" id="pic10" onclick="play10(this)" value="PLAY">
+                    <button type="button" onclick="play10(this)" value="PLAY">
+                        <img src="../source/picture/pic-10.png" > 
+                        <p align="center">꽃 (1980)</p>
+                   </button>
+                   <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img10" onclick="ChnImg10()">			
+                    </div>
+                    <audio id="audio10" src="../source/audio/10.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic11" onclick="play11(this)" value="PLAY">
+                    <button type="button" onclick="play11(this)" value="PLAY">
+                        <img src="../source/picture/pic-11.png" > 
+                        <p align="center">소 (1971)</p>
+                    </button>
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img11" onclick="ChnImg11()">			
+                    </div>
+                    <audio id="audio11" src="../source/audio/11.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic12" onclick="play12(this)" value="PLAY">
+                    <button type="button" onclick="play12(this)" value="PLAY">
+                        <img src="../source/picture/pic-12.png" > 
+                        <p align="center">마오 (1972)</p>
+                    </button>
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img12" onclick="ChnImg12()">			
+                    </div>
+                    <audio id="audio12" src="../source/audio/12.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic13" onclick="play13(this)" value="PLAY">
+                    <button type="button" onclick="play13(this)" value="PLAY">
+                        <img src="../source/picture/pic-13.png" > 
+                        <p align="center">베수비오산 (1985)</p>
+                    </button>
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img13" onclick="ChnImg13()">			
+                    </div>
+                    <audio id="audio13" src="../source/audio/13.mp3"></audio>
+                </div>
+               
+               <div class="pic" id="pic14" onclick="play14(this)" value="PLAY">
+                    <button type="button" onclick="play14(this)" value="PLAY">
+                        <img src="../source/picture/pic-14.png" > 
+                        <p align="center">전기 의자 (1971)</p>
+                   </button>
+                   <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img14" onclick="ChnImg14()">			
+                    </div>
+                    <audio id="audio14" src="../source/audio/14.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic15" onclick="play15(this)" value="PLAY">
+                    <button type="button" onclick="play15(this)" value="PLAY">
+                        <img src="../source/picture/pic-15.png" > 
+                        <p align="center">믹 재거 (1975)</p>
+                    </button>
+                    <div class="overlay overlayFade">
+                        <img src="../source/picture/play.png" id="img15" onclick="ChnImg15()">			
+                    </div>
+                    <audio id="audio15" src="../source/audio/15.mp3"></audio>
+                </div>
+                
+                <div class="pic" id="pic16" onclick="play16(this)" value="PLAY">
+                    <button type="button" onclick="play16(this)" value="PLAY">
+                        <img src="../source/picture/pic-16.png"  > 
+                        <p align="center">인터뷰 (1985)</p>
+                    </button>
+                    <div class="overlay overlayFade" >
+                        <img src="../source/picture/play.png" id="img16" onclick="ChnImg16()">
+                    </div>
+                    <audio id="audio16" src="../source/audio/16.mp3"></audio>
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+        
+
+    
+        <footer>
+            <div class="footwrap">
+               <div class="footcon">
+                    <div class="icon">
+                        <a href="https://twitter.com/home">
+                        <img src="../source/twitter.png">
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <img src="../source/facebook.png">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="../source/instagram.png">
+                        </a>
+                        <a href="https://andywarholexhibition.modoo.at/">
+                            <img src="../source/link.png">
+                        </a>
+                    </div>
+                    <div class="footlogo">
+                        <h2>Andy Warhol</h2>
+                        <h2>Beginning Seoul</h2>
+                        
+                    </div>
+                    <div class="footcall">
+                        <h3>Contact</h3>
+                        <p></p>
+                        <p>02-3277-0610</p>
+                        <p>26, Uisadang-daero, Yeongdeungpo-gu, Seoul, Republic of Korea</p>
+                        <p>andywarholbeginning@seoul.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+       
+        
+    </body>
+</html>
