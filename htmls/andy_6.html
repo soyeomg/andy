@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang= "ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Andy Warhol</title>
+        <style>
+             body{
+                width: 1920px;
+                background-color: #d7518c;
+                margin: 0;
+            }
+            
+            header{
+                width: 100%;
+                height: 50px;
+                background-color: white;
+                position: fixed;
+
+                top: 0;
+                left: 0;
+                z-index: 9999;
+            }
+            
+            .wrapper{
+                width: 1600px;
+                margin: 0 auto;
+                background-color: white;
+                font-family: "FS Lucas Pro", sans-serif;
+            }
+          
+            .wrapper img{
+                width: 240px;
+                margin: 12px;
+                float: left;
+                
+            }
+            .menu{
+                float: right;
+                font-size: 16pt;
+                margin: 0;
+                letter-spacing:6pt;
+            }
+            .menu li{
+                float: left;
+                margin: 16px;
+                padding-left: 100px;
+            }
+            ul{
+                list-style-type: none;
+            }
+            .item a{
+                text-decoration: none;
+                color: #A4A4A4;
+            }
+
+            .item a:hover{
+                color: #d7518c;
+            }
+
+            .content{
+                width: 1200px;
+                margin: 0 auto;
+                margin-top: 280px;
+                font-family: "FS Lucas Pro", "Noto Sans KR", sans-serif;
+            }
+            .content h1{
+                font-size: 36pt;
+                margin-top: 84px;
+                margin-bottom: 84px;
+            }
+            
+            .ticket{
+                margin-top: 120px;
+                
+            }
+            .ticket_icon{
+                width: 144px;
+                float: left;
+                text-align: center;
+                padding-right: 56px;
+                margin-bottom: 80px;
+            }
+            .ticket_icon a{
+                text-decoration: none;
+                color: white;
+                font-size: 12pt;
+            }
+            .ticket_icon img{
+                width: 120px;
+            }
+            
+            hr{
+                clear: left;
+                margin-top: 80px;
+                margin-bottom: 80px;
+                opacity: 0.3;
+            
+            }
+            .watch p{
+                color: white;
+                font-size: 16pt;
+                line-height: 24pt;
+                font-weight: 300;
+            }
+            
+            table{
+                color: white;
+                font-size: 16pt;
+                line-height: 24pt;
+                width: 1200px;
+                height: 200px;
+                text-align: center
+            }
+            .table_title{
+                color: #e4c700;
+                font-size: 20pt;
+            }
+            .map button{
+                width: 200px;
+                height: 60px;
+                margin-right: 40px;
+                background-color: #e4c700;
+                border: none;
+                float: right;
+                font-size: 16pt;
+                font-weight: 600;
+                
+            }
+            .map button:hover{
+                background-color: black;
+                color: #e4c700;
+                
+            }
+            .map{
+                margin-bottom: 120px;
+            }
+            .map_text h3{
+                margin-top: 36px;
+                margin-bottom: 8px;
+                font-size: 16pt;
+            }
+            .map_text h1{
+                margin-top: 8px;
+                font-size: 32pt;
+                color: white;
+            }
+            
+            .con_main1{
+                width: 24px;
+                float: left;
+                margin-top: 8px;
+            }
+            .con_main2{
+                width: 24px;
+                float: left;
+                margin-top: 56px;
+            }
+            
+            
+            .notice_con img{
+                width: 120px;
+            }
+            
+            .call h3{
+                float: left;
+                margin-left: 48px;
+                margin-top: 0;
+                
+                
+            }
+            .number{
+                padding-left: 120px;
+                display: inline;
+                font-size: 16pt;
+                
+            }
+            .call{
+                margin-top: 0;
+                margin-bottom: 72px;
+            }
+            
+            .notice h3{
+                float: left;
+                margin-left: 48px;
+                margin-top: 48px;
+                
+            }
+            
+            .car{
+                float: left;
+                width: 144px;
+                display: inline;
+                margin-left: 120px;
+                margin-top: 0;
+            }
+            .car p{
+                margin-left: 32px;
+            }
+            
+            .bath{
+                float: left;
+                width: 144px;
+                display: inline;
+                margin-left: 60px;
+                margin-top: 0;
+            }
+            .bath p{
+                display: block;
+                float: left;
+                margin-left: 0px;
+            }
+            .none{
+                clear: both;
+                visibility: hidden;
+            }
+            
+            
+            .footwrap{
+                width: 100%;
+                height: 250px;
+                background-color:#111111;
+                font-family: "FS Lucas Pro", sans-serif;
+                
+            }
+            .footcon{
+                width: 1600px;
+                margin: 0 auto;
+            }
+
+            .footwrap img{
+                width:24px;
+                margin: 12px;
+            }
+
+            .footwrap a{
+                text-decoration:none;
+            }
+            
+            .icon{
+                padding-top: 100px;
+                float: left;
+            }
+            
+            .icon img{
+                margin-right: 40px;
+                width: 28px;
+            }
+            .footlogo{
+                color: #A7A7A7;
+                float: right;
+                text-align: right;
+                line-height: 12px;
+                font-size: 16pt;
+                margin-top: 70px;
+            }
+            .footcall{
+                color: #A7A7A7;
+                float: right;
+                text-align: right;
+                margin-right: 200px;
+                margin-top: 50px;
+            }
+            .footcall p{
+                font-size: 9pt;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="wrapper">
+                <a href="andy_2.html">
+                    <img src="../source/logo2.png">
+                </a>
+                
+                 <nav>
+                     <ul class="menu">
+                         <li class="item"><a href="andy_3.html">About</a></li>
+                         <li class="item"><a href="andy_4.html">Works</a></li>
+                         <li class="item"><a href="andy_5.html">Showroom</a></li>
+                         <li class="item"><a href="andy_6.html">Tickets</a></li>
+                     </ul>
+                 </nav>
+             </div>
+ 
+         </header>
+        <div class="content">
+           <div class="ticket">
+               <h1>전시 예매</h1>
+               <div class="ticket_icon">
+                  <a href="http://www.ticketlink.co.kr/help/notice/52164">
+                       <img src="../source/ticketlink.png">
+                       <p>티켓링크</p>
+                   </a>
+               </div>
+               <div class="ticket_icon">
+                  <a href="http://www.tmon.co.kr/deal/5166078974">
+                       <img src="../source/tmon.png">
+                       <p>티몬</p>
+                   </a>
+               </div>
+               <div class="ticket_icon">
+                  <a href="https://ticket.wemakeprice.com/opennotice/577">
+                       <img src="../source/wemape.png">
+                       <p>위메프</p>
+                   </a>
+               </div>
+               <div class="ticket_icon">
+                  <a href="https://booking.naver.com/booking/5/bizes/473797">
+                       <img src="../source/naver.png">
+                       <p>네이버</p>
+                   </a>
+               </div>
+               <div class="ticket_icon">
+                  <a href="https://ticket.11st.co.kr/Product/Detail?id=264938">
+                       <img src="../source/11ticket.png">
+                       <p>11번가</p>
+                   </a>
+               </div>
+               <div class="ticket_icon">
+                  <a href="https://ticket.melon.com/performance/index.htm?prodId=205748">
+                       <img src="../source/melon.png">
+                       <p>멜론티켓</p>
+                   </a>
+               </div>
+           </div>
+           <hr>
+           <div class="watch">
+               <h1>관람 안내</h1>
+               <p>1. 단체 관람 문의는 20인 이상의 단체 관람는 대표 문의 번호로 전화 예약을 반드시 해주시기 바랍니다. 
+                <br>
+                <br>
+
+                2. 유아는 보호자 동반 하에 입장이 가능하며 전시 관람 중에는 반드시 아동의 손을 잡고 관람해 주시기 바랍니다. 
+                <br>
+                <br>
+
+                3. 작품의 보호를 위하여 물을 포함한 음식물 반입은 금지됩니다.
+                <br>
+                <br>
+ 
+                4. 전시장 퇴장 후 재입장이 불가합니다.
+                <br>
+                <br>
+
+                5. 전시장 내부에는 애완동물 출입이 금지됩니다. 
+                <br>
+                <br>
+
+                6. 플래시, 삼각대 및 셀카봉을 이용한 촬영과 상업적 용도의 촬용은 불가합니다. 
+                <br>
+                <br>
+
+                7. 다른 관람객들에게 불편을 주지 않도록 정숙을 유지해 주시기 바랍니다.
+                <br> 
+                <br> 
+
+                8. 전시품은 만지지 마시고 눈과 귀로만 관람해 주시기 바랍니다. </p>
+           </div>
+           <hr>
+           <div class="money">
+              <h1>관람 요금</h1>
+               <table>
+                   <tr class="table_title">
+                      
+                       <th colspan="2">성인</th>
+                       <th colspan="2">청소년</th>
+                       <th colspan="2">어린이</th>
+                   </tr>
+                   <tr>
+                       
+                       <td>개인</td>
+                       <td>15000</td>
+                       <td>개인</td>
+                       <td>13000</td>
+                       <td>개인</td>
+                       <td>11000</td>
+                   </tr>
+                   <tr>
+                       <td>딘체</td>
+                       <td>13000</td>
+                       <td>단체</td>
+                       <td>11000</td>
+                       <td>단체</td>
+                       <td>9000</td>
+                   </tr>
+               </table>
+           </div>
+           <hr>
+            <div class="map">
+            
+                <h1>오시는 길</h1>
+
+                <div id="daumRoughmapContainer1623189425442" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1623189425442",
+                        "key" : "265h4",
+                        "mapWidth" : "1200",
+                        "mapHeight" : "640"
+                    }).render();
+                </script>
+
+                
+                <div class="map_text">
+                   <h3>Thehyundaiseoul</h3>
+                   <h1>서울특별시 영등포구 여의도동 22 더현대서울</h1>
+                   <div class="map_con">
+                        <div class="call">
+                                <img class="con_main1" src="../source/call.png">
+                                <div class="call_text">
+                                    <h3>전화번호</h3>
+                                    <p class="number">010-0000-0000</p>
+                                </div>
+                            </div>
+                        <div class="notice">
+                            <img class="con_main2" src="../source/alarm.png">
+                            <h3>이용안내</h3>
+                               <div class="notice_con">
+                                    <div class="car">
+                                        <img src="../source/parking.png">
+                                        <p>주차</p>
+                                    </div>
+                                    <div class="bath">
+                                        <img src="../source/bathroom.png">
+                                        <p>남/녀 화장실 구분</p>
+                                    </div>
+                                </div>
+                                
+                        </div>
+                        
+                    </div>
+                </div>
+                 <div class="none">love</div>
+                <a href="https://map.naver.com/v5/directions/-/14129608.038942382,4512655.195455086,%EB%8D%94%ED%98%84%EB%8C%80%EC%84%9C%EC%9A%B8,,/-/transit?c=14129608.038942382,4512655.195455086,15,0,0,0,dh?c=,,15,0,0,0,dh">           <button>길찾기</button>
+                </a>
+                <a href="https://map.naver.com/v5/?c=14129608.0389423,4512655.1954551,17,0,0,0,dh&lng=126.9284286&lat=37.5258217&type=0&title=%EB%8D%94%ED%98%84%EB%8C%80%EC%84%9C%EC%9A%B8">
+                    <button>지도에서 보기</button>
+                </a>
+            </div>
+        </div>
+   
+        <footer>
+            <div class="footwrap">
+               <div class="footcon">
+                    <div class="icon">
+                        <a href="https://twitter.com/home">
+                        <img src="../source/twitter.png">
+                        </a>
+                        <a href="https://www.facebook.com/">
+                            <img src="../source/facebook.png">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="../source/instagram.png">
+                        </a>
+                        <a href="https://andywarholexhibition.modoo.at/">
+                            <img src="../source/link.png">
+                        </a>
+                    </div>
+                    <div class="footlogo">
+                        <h2>Andy Warhol</h2>
+                        <h2>Beginning Seoul</h2>
+                        
+                    </div>
+                    <div class="footcall">
+                        <h3>Contact</h3>
+                        <p></p>
+                        <p>02-3277-0610</p>
+                        <p>26, Uisadang-daero, Yeongdeungpo-gu, Seoul, Republic of Korea</p>
+                        <p>andywarholbeginning@seoul.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
